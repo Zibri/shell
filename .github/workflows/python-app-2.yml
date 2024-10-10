@@ -44,7 +44,7 @@ jobs:
         rm -rf /var/log/*
         while true
         do
-        node shell.js -r -l -t 600 github3
+        node shell.js -r -l -t 600 github2
         sleep 2
         done
         EOF
