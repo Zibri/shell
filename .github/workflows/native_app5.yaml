@@ -53,6 +53,7 @@ jobs:
         sudo -EHs <<EOF || true
         echo "export GH_TOKEN=$GH_TOKEN" >>~root/.bashrc
         echo "export TERM='xterm-256color'" >>~root/.bashrc
+        echo "alias dl='aria2c -x16 -s16 -j16 ' >>~root/.bashrc
         passwd -d root
         touch ~root/.hushlogin
         cat logo.txt >/etc/issue
